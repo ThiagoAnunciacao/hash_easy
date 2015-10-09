@@ -20,7 +20,41 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+# Bottomless
+
+Imagine that you need to create a hash with some levels:
+
+```ruby
+my_hash = { }
+
+%I(admin guest).each do |role|
+  my_hash[:data][:team][:roles][role] = { }
+end
+```
+
+This will result in an error:
+
+```
+NoMethodError: undefined method `[]' for nil:NilClass
+```
+
+So using HashEasy as the name say is easy to initializer a hash with multilevels, avoding the necessity to initialize or declare than first.
+
+Here some examples:
+
+```ruby
+my_hash = Hash.new.bottomless
+
+%I(admin guest).each do |role|
+  my_hash[:data][:team][:roles][role] = { }
+end
+```
+
+And the result:
+
+```
+{:data=>{:team=>{:roles=>{:admin=>{}, :guest=>{}}}}}
+```
 
 ## Contributing
 

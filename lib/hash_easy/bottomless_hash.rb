@@ -8,10 +8,4 @@ module HashEasy
       new.merge(hash)
     end
   end
-
-  class Hash
-    def bottomless
-      BottomlessHash.from_hash(self)
-    end
-  end
 end
