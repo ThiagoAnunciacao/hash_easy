@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hash_easy (0.0.1)
+    hash_easy (0.0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -30,3 +30,6 @@ DEPENDENCIES
   hash_easy!
   rake (~> 10.0)
   rspec
+
+BUNDLED WITH
+   1.10.6
