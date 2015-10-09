@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = HashEasy::VERSION
   spec.authors       = ["Thiago da Anunciação"]
   spec.email         = ["thiago.anunciacao@me.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Some good methods to help you with your hashies.}
+  spec.description   = %q{Forget of start your hashes which makes your code dirty and annoying to test.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
